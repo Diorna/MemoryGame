@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+        <title>Memory game</title>
+        <link rel="shortcut icon" href="img/icon_card.jpg"/>
+        <link rel="stylesheet" href="style/main.css" type="text/css">
+        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="js/index.js" defer></script>
+    </head>
+    <body>
+      <!--Стартовый экран-->
+          <div id="Start" data-tid="App">
+               <img src="img/StartGame.png" alt="">
+               <p>Memory Game</p>
+               <button name = "NewGame-startGame" id = "NewGame" data-tid = "NewGame-startGame">Начать игру</button>
+          </div>
+          
+          <!--Основной экран игры-->
+          <div id="Game">
+               <div id="title_head">
+                   <div data-tid="RestartGame"><a href='#' data-tid="Menu-newGame" id="restart">Начать заново</a></div>
+                   <div data-tid ="Scores">Очки: 
+                       <span data-tid="Menu-scores" class='scores'></span>
+                   </div>
+               </div>
+               <div class="clear"></div>
+               <div data-tid="Deck" id="deck"></div>
+          </div>
+          
+          <!--Экран победителя-->
+           <div id="EndGame">
+               <img src="img/Group2.png"><br>
+               <p>Поздравляем!</p>
+               <p>Ваш итоговый счет: <span class='scores'></span></p>
+               <button name = "EndGame-retryGame" data-tid="EndGame-retryGame" id="more_restart">Ещё раз</button>
+           </div>
+     </body>
+    
+</html>

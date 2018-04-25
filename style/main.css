@@ -1,0 +1,87 @@
+body{
+    background-color: #1c7030;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#Start p{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+p{
+    font-size: 1.9em;
+    color: white;
+}
+div[data-tid='App'], #Game, #EndGame{
+    width: 1200px;
+    height: 850px;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+div[data-tid='App']>img, #EndGame>img{
+    width: 60%;
+    margin-top: 100px;
+}
+button[data-tid='NewGame-startGame'], 
+button[data-tid='EndGame-retryGame']{
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: #1c7030;
+    border: 0;
+    outline: none;
+    background-color: white;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+button[data-tid='NewGame-startGame']:hover,
+button[data-tid='EndGame-retryGame']:hover{
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+/*2screan*/
+#title_head{
+    display: inline;
+}
+div[data-tid='RestartGame']{
+    float: left;
+}
+div[data-tid='RestartGame']>a:hover{
+    text-decoration: none;
+}
+div[data-tid ='Scores']{
+    float: right;
+}
+div[data-tid='RestartGame']>a, 
+div[data-tid ='Scores']{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.card{
+    background-image: url(../img/flipped.png);
+    background-size: cover;
+    width: 180px;
+    height: 250px;;
+    margin-top: 20px;
+}
+div [data-tid='Deck'] div:hover{
+    cursor: pointer;
+}
+div [data-tid='Deck'] div>img{
+    width: 100%;
+}
+div [data-tid='Deck']{
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+    margin-top: 15px;
+}
+/*3screan*/
+
